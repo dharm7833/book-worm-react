@@ -1,0 +1,164 @@
+.related-reads {
+  width: 350px;
+  min-width: 350px;
+  background-color: #0d0d0d;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.related-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.related-books {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.related-book-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.related-book-card:hover {
+  transform: translateY(-3px);
+}
+
+.related-book-cover {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.related-cover-content {
+  text-align: center;
+  width: 100%;
+}
+
+.related-cover-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.related-cover-icon {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.related-cover-author {
+  font-size: 10px;
+  color: #000;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.related-book-info {
+  padding: 15px;
+}
+
+.related-book-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 5px 0;
+}
+
+.related-book-author {
+  font-size: 12px;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+
+.related-book-description {
+  font-size: 12px;
+  color: #b0b0b0;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+.related-book-meta {
+  margin-bottom: 10px;
+}
+
+.related-book-format {
+  font-size: 11px;
+  color: #888;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-book-genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.related-genre-tag {
+  font-size: 10px;
+  color: #4a9eff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.related-genre-tag:hover {
+  color: #6bb3ff;
+}
+
+.related-book-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.related-book-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.related-book-delivery {
+  font-size: 10px;
+  color: #888;
+}
+
+@media (max-width: 1200px) {
+  .related-reads {
+    width: 100%;
+    min-width: unset;
+    position: static;
+  }
+
+  .related-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .related-reads {
+    padding: 15px;
+  }
+
+  .related-books {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Made with Bob */

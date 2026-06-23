@@ -1,0 +1,17 @@
+.app {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.app-container {
+  display: flex;
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+/* Made with Bob */
